@@ -1,4 +1,4 @@
-# Very short description of the package
+Allows running a seeder automatically in production when the related migration is complete.  This allows extracting any data manipulation logic out of the migration itself and into a dedicated class than can be run independently, if needed.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/chrisdicarlo/laravel-production-seeder.svg?style=flat-square)](https://packagist.org/packages/chrisdicarlo/laravel-production-seeder)
 [![Total Downloads](https://img.shields.io/packagist/dt/chrisdicarlo/laravel-production-seeder.svg?style=flat-square)](https://packagist.org/packages/chrisdicarlo/laravel-production-seeder)
