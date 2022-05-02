@@ -2,6 +2,6 @@
 
 namespace ChrisDiCarlo\LaravelProductionSeeder\Contracts;
 
-interface RunsProductionSeeder
+interface RunsRefactor
 {
 }

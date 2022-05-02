@@ -5,7 +5,7 @@ namespace ChrisDiCarlo\LaravelProductionSeeder;
 use ChrisDiCarlo\LaravelProductionSeeder\EventServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelProductionSeederServiceProvider extends ServiceProvider
+class LaravelProductionRefactorServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

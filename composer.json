@@ -1,11 +1,11 @@
 {
-    "name": "chrisdicarlo/laravel-production-seeder",
+    "name": "chrisdicarlo/laravel-production-refactor",
     "description": "",
     "keywords": [
         "chrisdicarlo",
-        "laravel-production-seeder"
+        "laravel-production-refactor"
     ],
-    "homepage": "https://github.com/chrisdicarlo/laravel-production-seeder",
+    "homepage": "https://github.com/chrisdicarlo/laravel-production-refactor",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ChrisDiCarlo\\LaravelProductionSeeder\\": "src"
+            "ChrisDiCarlo\\LaravelProductionRefactor\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ChrisDiCarlo\\LaravelProductionSeeder\\Tests\\": "tests"
+            "ChrisDiCarlo\\LaravelProductionRefactor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ChrisDiCarlo\\LaravelProductionSeeder\\LaravelProductionSeederServiceProvider"
+                "ChrisDiCarlo\\LaravelProductionRefactor\\LaravelProductionRefactorServiceProvider"
             ]
         }
     }
