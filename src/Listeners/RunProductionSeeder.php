@@ -12,6 +12,10 @@ class RunProductionSeeder
 {
     public function handle(MigrationEnded $event)
     {
+        if (!app()->isProduction()) {
+            return;
+        }
+
         $class = new ReflectionClass($event->migration);
 
         if (!$class->implementsInterface(RunsProductionSeeder::class)) {
