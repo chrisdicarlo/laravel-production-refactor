@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Chrisdicarlo\\LaravelProductionSeeder\\": "src"
+            "ChrisDiCarlo\\LaravelProductionSeeder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Chrisdicarlo\\LaravelProductionSeeder\\Tests\\": "tests"
+            "ChrisDiCarlo\\LaravelProductionSeeder\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,11 +44,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Chrisdicarlo\\LaravelProductionSeeder\\LaravelProductionSeederServiceProvider"
-            ],
-            "aliases": {
-                "LaravelProductionSeeder": "Chrisdicarlo\\LaravelProductionSeeder\\LaravelProductionSeederFacade"
-            }
+                "ChrisDiCarlo\\LaravelProductionSeeder\\LaravelProductionSeederServiceProvider"
+            ]
         }
     }
 }

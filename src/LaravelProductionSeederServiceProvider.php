@@ -1,7 +1,8 @@
 <?php
 
-namespace Chrisdicarlo\LaravelProductionSeeder;
+namespace ChrisDiCarlo\LaravelProductionSeeder;
 
+use ChrisDiCarlo\LaravelProductionSeeder\EventServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelProductionSeederServiceProvider extends ServiceProvider
@@ -21,7 +22,7 @@ class LaravelProductionSeederServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-production-seeder.php'),
+                __DIR__ . '/../config/config.php' => config_path('laravel-production-seeder.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,11 +51,12 @@ class LaravelProductionSeederServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-production-seeder');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-production-seeder');
+        $this->app->register(EventServiceProvider::class);
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravel-production-seeder', function () {
-            return new LaravelProductionSeeder;
-        });
+        // $this->app->singleton('laravel-production-seeder', function () {
+        //     return new LaravelProductionSeeder;
+        // });
     }
 }
